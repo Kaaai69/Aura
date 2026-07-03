@@ -437,7 +437,7 @@ function App() {
             </p>
             <a href="#consultation" className="btn-premium-solid">Получить презентацию</a>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div className="about-features-grid">
             <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem', borderLeft: '3px solid var(--primary-gold)' }}>
               <Compass size={32} className="text-gold" />
               <h3 style={{ fontSize: '1.2rem', textTransform: 'uppercase' }}>Умная инсоляция</h3>

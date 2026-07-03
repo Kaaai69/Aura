@@ -185,12 +185,20 @@ header.scrolled {
   color: var(--text-secondary);
 }
 
+/* About Section Features Grid */
+.about-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
 /* Projects Section */
 .projects-filter {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 3.5rem;
+  flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -1111,6 +1119,11 @@ footer {
     border-left: none;
     border-top: 1px solid var(--border-color);
     padding: 2rem 0 0 0;
+    background: transparent; /* Reset desktop background fill */
+  }
+  
+  .about-features-grid {
+    grid-template-columns: 1fr;
   }
   
   .doc-accordion-container {
@@ -1130,10 +1143,26 @@ footer {
     align-items: center;
   }
   
+  .projects-filter {
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
   
+  .project-price-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .project-link {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
   .design-timeline::before {
     left: 20px;
   }
@@ -1154,6 +1183,15 @@ footer {
     padding-right: 0;
   }
   
+  .calc-card {
+    padding: 1.5rem;
+  }
+
+  .calc-group-buttons {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
   .form-row {
     grid-template-columns: 1fr;
     gap: 2rem;
